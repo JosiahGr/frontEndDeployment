@@ -10,6 +10,7 @@ class Dashboard extends React.Component {
     const { categories, categoryCreate } = this.props;
     return (
       <div className='dashboard'>
+        <h1>Budget Tracker</h1>
         <CategoryForm onComplete={categoryCreate}/>
         {
           categories.map((currentCategory, i) => 

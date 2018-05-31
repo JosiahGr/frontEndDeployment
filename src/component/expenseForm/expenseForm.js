@@ -50,7 +50,7 @@ export default class ExpenseForm extends React.Component {
         value={this.state.price}
         onChange={this.handleChange}
         />
-        <button type="submit"> {buttonText} </button>
+        <button type="submit"> {buttonText} Expense </button>
       </form>
     );
   }

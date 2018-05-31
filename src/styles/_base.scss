@@ -4,14 +4,45 @@ body {
   background: $background-color;
   font-family: sans-serif;
   color: $font-color;
+  text-align: center;
 }
 
 a {
   color: $font-color;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.dashboard {
+  display: inline-block;
+  
+  input, select, textarea {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+   .btn {
+    background-color: #ffffff;
+  }
+}
+
+button {
+  margin: 5px 0 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: $button-color;
+  border-color: $button-color;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .error {
