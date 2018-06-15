@@ -5,6 +5,9 @@
   "main": "webpack.common.js",
   "scripts": {
     "watch": "webpack-dev-server --config webpack.dev.js",
+    "start": "node index.js",
+    "pack": "webpack --config webpack.prod.js",
+    "heroku-post-build": "webpack --progress --config webpack.prod.js",
     "test": "jest"
   },
   "jest": {
@@ -59,5 +62,8 @@
     "webpack-cli": "^2.1.4",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.19"
   }
 }
